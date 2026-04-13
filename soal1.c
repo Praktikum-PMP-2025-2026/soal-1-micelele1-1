@@ -17,7 +17,7 @@ int status(int izin, int suhu, int radiasi, int jam ){
     else if (izin==1){ printf("MASUK");}
     else if (izin==2 && radiasi<=2 && (jam>=8&&jam<=18)) {printf("MASUK");}
     else if (izin==2){ printf("PEMERIKSAAN\n");}
-    else if(izin==3&&radiasi==0&&(jam>=8&&jam<=18)) {printf ("MASUK");}
+    else if(izin==3&&radiasi==0&& suhu<380) {printf ("MASUK");}
     else {printf("TOLAK");}
 }
 int main (){
